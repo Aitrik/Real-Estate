@@ -19,21 +19,35 @@ const Hero = () => {
 
   return (
     <section className="relative min-h-screen flex items-center justify-center overflow-hidden">
-      {/* Enhanced Background with Multiple Layers */}
+      {/* Enhanced Background with Real Estate Video */}
       <div className="absolute inset-0 z-0">
-        <div
-          className="absolute inset-0 bg-cover bg-center bg-no-repeat"
-          style={{
-            backgroundImage: 'url(https://images.pexels.com/photos/1396122/pexels-photo-1396122.jpeg?auto=compress&cs=tinysrgb&w=1600)',
-          }}
-        />
+        {/* Background Video - Real Estate Buildings */}
+        <video
+          autoPlay
+          muted
+          loop
+          playsInline
+          className="absolute inset-0 w-full h-full object-cover"
+        >
+          <source
+            src="https://videos.pexels.com/video-files/3773486/3773486-hd_1920_1080_30fps.mp4"
+            type="video/mp4"
+          />
+          {/* Fallback image if video fails to load */}
+          <div
+            className="absolute inset-0 bg-cover bg-center bg-no-repeat"
+            style={{
+              backgroundImage: 'url(https://images.pexels.com/photos/1396122/pexels-photo-1396122.jpeg?auto=compress&cs=tinysrgb&w=1600)',
+            }}
+          />
+        </video>
         
         {/* Enhanced Dark Overlay for Better Text Visibility */}
-        <div className="absolute inset-0 bg-gradient-to-br from-black/25 via-gray-900/30 to-black/35" />
-        <div className="absolute inset-0 bg-gradient-to-t from-black/15 via-transparent to-black/10" />
+        <div className="absolute inset-0 bg-gradient-to-br from-black/40 via-gray-900/45 to-black/50" />
+        <div className="absolute inset-0 bg-gradient-to-t from-black/30 via-transparent to-black/20" />
         
         {/* Additional subtle overlay for extra contrast */}
-        <div className="absolute inset-0 bg-black/5" />
+        <div className="absolute inset-0 bg-black/15" />
         
         {/* Animated Overlay Pattern */}
         <div className="absolute inset-0 opacity-10">
@@ -95,7 +109,7 @@ const Hero = () => {
             initial={{ opacity: 0, scale: 0.9, y: 20 }}
             animate={{ opacity: 1, scale: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.2 }}
-            className="inline-flex items-center px-6 py-3 rounded-full bg-white/20 backdrop-blur-md border border-white/40 text-white mb-8 shadow-lg"
+            className="inline-flex items-center px-6 py-3 rounded-full bg-white/25 backdrop-blur-md border border-white/40 text-white mb-8 shadow-lg"
           >
             <motion.div
               animate={{ rotate: 360 }}
@@ -119,14 +133,14 @@ const Hero = () => {
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.4 }}
-            className="text-6xl md:text-8xl font-bold text-white mb-8 leading-tight drop-shadow-lg"
+            className="text-6xl md:text-8xl font-bold text-white mb-8 leading-tight drop-shadow-2xl"
           >
             Find Your
             <motion.span
               initial={{ backgroundPosition: "0% 50%" }}
               animate={{ backgroundPosition: "100% 50%" }}
               transition={{ duration: 3, repeat: Infinity, repeatType: "reverse" }}
-              className="block bg-gradient-to-r from-blue-400 via-teal-400 to-purple-400 bg-clip-text text-transparent bg-300% animate-gradient drop-shadow-lg"
+              className="block bg-gradient-to-r from-blue-400 via-teal-400 to-purple-400 bg-clip-text text-transparent animate-gradient drop-shadow-2xl"
               style={{ backgroundSize: "300% 300%" }}
             >
               Dream Home
@@ -140,13 +154,13 @@ const Hero = () => {
             transition={{ duration: 0.8, delay: 0.6 }}
             className="mb-12"
           >
-            <p className="text-xl md:text-2xl text-white/95 max-w-3xl mx-auto leading-relaxed drop-shadow-md">
+            <p className="text-xl md:text-2xl text-white/95 max-w-3xl mx-auto leading-relaxed drop-shadow-lg">
               Discover premium properties with our expert team. From luxury estates to cozy homes, 
               <motion.span
                 initial={{ opacity: 0 }}
                 animate={{ opacity: 1 }}
                 transition={{ delay: 1.5, duration: 0.8 }}
-                className="block mt-2 text-blue-300 font-medium drop-shadow-md"
+                className="block mt-2 text-blue-300 font-medium drop-shadow-lg"
               >
                 we make your real estate dreams come true ✨
               </motion.span>
@@ -167,7 +181,7 @@ const Hero = () => {
                 whileHover={{ scale: 1.02 }}
                 transition={{ duration: 0.2 }}
               >
-                <MapPin className="absolute left-4 top-1/2 transform -translate-y-1/2 h-5 w-5 text-blue-500 group-hover:text-blue-600 transition-colors" />
+                <MapPin className="absolute left-4 top-1/2 transform -translate-y-1/2 h-5 w-5 text-blue-500 group-hover:text-blue-600 transition-colors z-10" />
                 <Input
                   placeholder="Enter location"
                   value={location}
@@ -280,10 +294,10 @@ const Hero = () => {
                 >
                   {stat.icon}
                 </motion.div>
-                <div className="text-4xl md:text-5xl font-bold text-white mb-2 group-hover:text-blue-300 transition-colors drop-shadow-lg">
+                <div className="text-4xl md:text-5xl font-bold text-white mb-2 group-hover:text-blue-300 transition-colors drop-shadow-2xl">
                   {stat.number}
                 </div>
-                <div className="text-white/95 text-sm font-medium drop-shadow-md">{stat.label}</div>
+                <div className="text-white/95 text-sm font-medium drop-shadow-lg">{stat.label}</div>
               </motion.div>
             ))}
           </motion.div>
@@ -313,7 +327,7 @@ const Hero = () => {
         </motion.div>
       </motion.div>
     </section>
-  );
+  )
 };
 
 export default Hero;
