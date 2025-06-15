@@ -43,7 +43,7 @@ export const properties: Property[] = [
       name: 'Sarah Johnson',
       phone: '(555) 123-4567',
       email: 'sarah@realestate.com',
-      avatar: 'https://images.unsplash.com/photo-1494790108755-2616b612b029?w=200&h=200&fit=crop&crop=face'
+      avatar: 'https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=200&h=200&fit=crop&crop=face'
     },
     createdAt: '2024-01-15',
     featured: true
@@ -138,7 +138,7 @@ export const properties: Property[] = [
     images: [
       'https://images.unsplash.com/photo-1571055107559-3e67626fa8be?w=800&h=600&fit=crop&crop=center',
       'https://images.unsplash.com/photo-1582268611958-ebfd161ef9cf?w=800&h=600&fit=crop&crop=center',
-      'https://images.unsplash.com/photo-1540518614846-7eded47c98e5?w=800&h=600&fit=crop&crop=center'
+      'https://images.unsplash.com/photo-1516455590571-18256e5bb9ff?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTV8fGhvbWVzfGVufDB8fDB8fHww&fit=crop&crop=center'
     ],
     description: 'Stunning waterfront condo with ocean views, resort-style amenities, and beach access.',
     features: ['Ocean Views', 'Beach Access', 'Resort Amenities', 'Concierge', 'Valet Parking'],
@@ -163,7 +163,7 @@ export const properties: Property[] = [
     images: [
       'https://images.unsplash.com/photo-1449844908441-8829872d2607?w=800&h=600&fit=crop&crop=center',
       'https://images.unsplash.com/photo-1560185127-6ed189bf02f4?w=800&h=600&fit=crop&crop=center',
-      'https://images.unsplash.com/photo-1493663284031-b7e3aaa4cab7?w=800&h=600&fit=crop&crop=center'
+      'https://images.unsplash.com/photo-1516455590571-18256e5bb9ff?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTV8fGhvbWVzfGVufDB8fDB8fHww&fit=crop&crop=center'
     ],
     description: 'Beautifully restored historic townhouse with original architectural details and modern updates.',
     features: ['Historic Details', 'Restored', 'Fireplace', 'Private Courtyard', 'Prime Location'],
@@ -289,7 +289,7 @@ export const properties: Property[] = [
     status: 'for-sale',
     images: [
       'https://images.unsplash.com/photo-1518780664697-55e3ad937233?w=800&h=600&fit=crop&crop=center',
-      'https://images.unsplash.com/photo-1493663284031-b7e3aaa4cab7?w=800&h=600&fit=crop&crop=center',
+      'https://images.unsplash.com/photo-1567496898669-ee935f5f647a?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTR8fGhvbWVzfGVufDB8fDB8fHww&fit=crop&crop=center',
       'https://images.unsplash.com/photo-1484154218962-a197022b5858?w=800&h=600&fit=crop&crop=center'
     ],
     description: 'Charming cottage with original hardwood floors, cozy fireplace, and beautiful garden.',
@@ -298,7 +298,7 @@ export const properties: Property[] = [
       name: 'Rachel Turner',
       phone: '(555) 012-3456',
       email: 'rachel@realestate.com',
-      avatar: 'https://images.unsplash.com/photo-1494790108755-2616b612b029?w=200&h=200&fit=crop&crop=face'
+      avatar: 'https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=200&h=200&fit=crop&crop=face'
     },
     createdAt: '2024-01-28'
   },
@@ -314,7 +314,7 @@ export const properties: Property[] = [
     status: 'for-sale',
     images: [
       'https://images.unsplash.com/photo-1544551763-46a013bb70d5?w=800&h=600&fit=crop&crop=center',
-      'https://images.unsplash.com/photo-1540518614846-7eded47c98e5?w=800&h=600&fit=crop&crop=center',
+      'https://images.unsplash.com/photo-1519678767534-29483894b34d?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8N3x8aG9tZXN8ZW58MHx8MHx8fDA%3D&fit=crop&crop=center',
       'https://images.unsplash.com/photo-1582268611958-ebfd161ef9cf?w=800&h=600&fit=crop&crop=center'
     ],
     description: 'Stunning beachfront bungalow with direct beach access, panoramic ocean views, and modern updates.',
@@ -365,7 +365,7 @@ export const properties: Property[] = [
     status: 'for-sale',
     images: [
       'https://images.unsplash.com/photo-1449844908441-8829872d2607?w=800&h=600&fit=crop&crop=center',
-      'https://images.unsplash.com/photo-1520637736862-4d197d17c0a4?w=800&h=600&fit=crop&crop=center',
+      'https://images.unsplash.com/photo-1628624747186-a941c476b7ef?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8aG9tZXN8ZW58MHx8MHx8fDA%3D&fit=crop&crop=center',
       'https://images.unsplash.com/photo-1518780664697-55e3ad937233?w=800&h=600&fit=crop&crop=center'
     ],
     description: 'Picturesque farmhouse on 5 acres with vineyard views, barn, and country charm.',
